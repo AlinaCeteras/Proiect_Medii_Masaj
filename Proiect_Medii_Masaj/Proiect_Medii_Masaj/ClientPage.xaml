@@ -16,8 +16,8 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Button Text="Save" Clicked="OnSaveButtonClicked" BackgroundColor="#B8D6E4"/>
-                <Button Grid.Column="1" Text="Delete" Clicked="OnDeleteButtonClicked" BackgroundColor="#B8D6E4"/>
+                <Button Text="Salveaza" Clicked="OnSaveButtonClicked" BackgroundColor="#B8D6E4"/>
+                <Button Grid.Column="1" Text="Sterge" Clicked="OnDeleteButtonClicked" BackgroundColor="#B8D6E4"/>
                 <ListView Grid.Row="1" x:Name="listView"
                     Margin="20"
                     ItemSelected="OnListViewItemSelected">

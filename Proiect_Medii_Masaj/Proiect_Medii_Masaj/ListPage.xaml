@@ -12,6 +12,7 @@
             </Editor>
             <Button Text="Adauga/Alege Numele Clientului" Clicked="OnChooseButtonClicked" BackgroundColor="#B8D6E4" />
             <Button Text="Adauga/Alege Numele Angajatului" Clicked="OnChooseButtonClicked" BackgroundColor="#B8D6E4"/>
+            <Button Text="Adauga/Alege Sala" Clicked="OnChooseButtonClicked" BackgroundColor="#B8D6E4"/>
             <Button Text="Adauga/Alege Data" Clicked="OnChooseButtonClicked" BackgroundColor="#B8D6E4"/>
             <Button Text="Adauga/Alege Ora" Clicked="OnChooseButtonClicked" BackgroundColor="#B8D6E4"/>
             <Grid>
@@ -19,8 +20,8 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Button Text="Save" Clicked="OnSaveButtonClicked" BackgroundColor="#C5D0CF" FontSize="Large"/>
-                <Button Grid.Column="1" Text="Delete" Clicked="OnDeleteButtonClicked" BackgroundColor="#C5D0CF" FontSize="Large"/>
+                <Button Text="Salveaza" Clicked="OnSaveButtonClicked" BackgroundColor="#C5D0CF" FontSize="Large"/>
+                <Button Grid.Column="1" Text="Sterge" Clicked="OnDeleteButtonClicked" BackgroundColor="#C5D0CF" FontSize="Large"/>
                 <ListView Grid.Row="1" Grid.ColumnSpan="2" x:Name="listView" Margin="20">
                     <ListView.ItemTemplate>
                         <DataTemplate>

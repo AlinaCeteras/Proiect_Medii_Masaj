@@ -2,31 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Proiect_Medii_Masaj.LoginUI"
-             BackgroundColor="#B8D6E4">
+             BackgroundColor="white">
 
     <ContentPage.Content>
-        <StackLayout Padding="50" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+        <StackLayout Padding="50" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Spacing="20">
 
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Centrul de terapie si masaj " TextColor="#205786" FontSize="Medium" FontAttributes="Bold" />
+                        <Span Text=" AVA" TextColor="#20B2AA" FontSize="Large" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
             <Image
                 Source="logo_proiect_medii.jpg" WidthRequest="220" HeightRequest="220" ></Image>
 
-            <Entry x:Name="txtUsername" Placeholder="Username" TextColor="White" PlaceholderColor="Gray"></Entry>
-            <Entry x:Name="txtParola" Placeholder="Parola" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="txtUsername" Placeholder="Username" TextColor="#205786" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="txtParola" Placeholder="Parola" IsPassword="True" TextColor="#205786" PlaceholderColor="Gray"></Entry>
             <Button
                VerticalOptions="Center"
                 Text="Login"
-                TextColor="Black"
+                TextColor="#205786"
                 BackgroundColor="White"
                 BorderColor="#205786"
                 BorderWidth="1.5"
                 CornerRadius="50"
                 Clicked="Button_Clicked"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                HeightRequest="50"
                 ></Button>
-
+                
             <Label HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="Introduceti datele de login" TextColor="#205786"/>
+                        <Span Text="Introduceti datele de login" TextColor="#20B2AA" FontSize="Medium"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>

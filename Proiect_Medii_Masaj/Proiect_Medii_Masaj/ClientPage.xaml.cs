@@ -26,10 +26,11 @@ namespace Proiect_Medii_Masaj
         }
         async void OnDeleteButtonClicked(object sender, EventArgs e)
         {
-            var client = (Client)BindingContext;
-            await App.Database.DeleteClientAsync(client);
-            listView.ItemsSource = await App.Database.GetClientsAsync();
+         var client = (Client)BindingContext;
+         await App.Database.DeleteClientAsync(client);
+         listView.ItemsSource = await App.Database.GetClientsAsync();
         }
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
