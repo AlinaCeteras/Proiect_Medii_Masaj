@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proiect_Medii_Masaj.ListEntryPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Adauga programare" Clicked="OnAppointmentListAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView"
+         Margin="20" ItemSelected="OnListViewItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                    <Label                   
+                                                
+                            Text="{Binding Description}"
+                            FontAttributes="Bold"
+                            TextColor="Black"
+                            HorizontalTextAlignment="Start"/>
+                        <Label
+                            Text="{Binding Date}"
+                            FontSize="Micro"
+                            HorizontalOptions="End"
+                            TextColor="Gray"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

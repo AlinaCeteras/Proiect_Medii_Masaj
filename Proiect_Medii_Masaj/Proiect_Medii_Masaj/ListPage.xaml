@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proiect_Medii_Masaj.ListPage">
+    <ContentPage.Content xmlns:local="clr-namespace:Proiect_Medii_Masaj">
+        <StackLayout Margin="20">
+            <Editor Placeholder="Detalii programare" TextColor="Black"
+                    Text="{Binding Description}">
+                <Editor.Behaviors>
+                    <local:ValidationBehaviour />
+                </Editor.Behaviors>
+            </Editor>
+            <Button Text="Adauga/Alege Numele Clientului" Clicked="OnChooseButtonClicked" BackgroundColor="#B8D6E4" />
+            <Button Text="Adauga/Alege Numele Angajatului" Clicked="OnChooseButtonClicked" BackgroundColor="#B8D6E4"/>
+            <Button Text="Adauga/Alege Data" Clicked="OnChooseButtonClicked" BackgroundColor="#B8D6E4"/>
+            <Button Text="Adauga/Alege Ora" Clicked="OnChooseButtonClicked" BackgroundColor="#B8D6E4"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Save" Clicked="OnSaveButtonClicked" BackgroundColor="#C5D0CF" FontSize="Large"/>
+                <Button Grid.Column="1" Text="Delete" Clicked="OnDeleteButtonClicked" BackgroundColor="#C5D0CF" FontSize="Large"/>
+                <ListView Grid.Row="1" Grid.ColumnSpan="2" x:Name="listView" Margin="20">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Detail="{Binding Description}" TextColor="Black"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
