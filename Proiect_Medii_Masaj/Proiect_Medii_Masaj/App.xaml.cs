@@ -24,7 +24,7 @@ namespace Proiect_Medii_Masaj
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new ListEntryPage());
+            MainPage = new NavigationPage(new LoginUI());
         }
 
         protected override void OnStart()

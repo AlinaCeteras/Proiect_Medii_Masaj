@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proiect_Medii_Masaj.LoginUI"
+             BackgroundColor="#B8D6E4">
+
+    <ContentPage.Content>
+        <StackLayout Padding="50" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Image
+                Source="logo_proiect_medii.jpg" WidthRequest="220" HeightRequest="220" ></Image>
+
+            <Entry x:Name="txtUsername" Placeholder="Username" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="txtParola" Placeholder="Parola" IsPassword="True" TextColor="White" PlaceholderColor="Gray"></Entry>
+            <Button
+               VerticalOptions="Center"
+                Text="Login"
+                TextColor="Black"
+                BackgroundColor="White"
+                BorderColor="#205786"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="Button_Clicked"
+                ></Button>
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Introduceti datele de login" TextColor="#205786"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
